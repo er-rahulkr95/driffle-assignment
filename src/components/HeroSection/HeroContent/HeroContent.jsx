@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./HeroContent.module.css";
 import Button from "../../Button/Button";
+import {ReactComponent as Arrow} from "../../../assets/arrow-right.svg"
+
 
 /**
  * Component to display Hero text 
@@ -30,7 +32,7 @@ const HeroContent = ({heroData}) => {
             aria-label="click to visit store"
           >
             <p className={styles.heroButtonText}>Visit our store</p>
-            <span className={styles.heroButtonArrow}>&#129122;</span>
+            <span className={styles.heroButtonArrow}><Arrow /></span>
           </Button>
         </div>
       </div>
